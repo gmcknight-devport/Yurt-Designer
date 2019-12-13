@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/Glenn McKnight/AppData/Local/Temp/Temp1_YurtDesigner_AlphaPrototype.zip/YurtDesigner/YurtDesignerProject/Assets/Scenes/Glenn.unity
+  isLoaded: 1
+  isActive: 1
