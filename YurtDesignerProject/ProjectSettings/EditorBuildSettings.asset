@@ -5,13 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Daniel.unity
-    guid: 51059753f41c57049ba2466260b21d79
   - enabled: 1
-    path: Assets/Scenes/Vishal.unity
-    guid: f41cb28a639cf944a90369f8f7195347
+    path: Assets/Scenes/Glenn.unity
+    guid: c2b4427f8ff86434bba1779f2c736d67
   m_configObjects: {}

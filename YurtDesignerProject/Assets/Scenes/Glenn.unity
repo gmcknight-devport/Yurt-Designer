@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad4db4ee8476ff4f95260ab7f2c3609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 400
+  speed: 150
 --- !u!81 &465083610
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1172,7 +1172,7 @@ PrefabInstance:
     - target: {fileID: 6591141676757663351, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84.07645
+      value: -83.92374
       objectReference: {fileID: 0}
     - target: {fileID: 6591141677130963590, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
@@ -1187,7 +1187,7 @@ PrefabInstance:
     - target: {fileID: 6591141677130963590, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 125.254944
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6591141677130963590, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
@@ -1212,7 +1212,7 @@ PrefabInstance:
     - target: {fileID: 6591141678089610219, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 125.254944
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6591141678089610219, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
@@ -1437,12 +1437,12 @@ PrefabInstance:
     - target: {fileID: 7702060938288353720, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7702060938288353720, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7702060938288353720, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
@@ -1452,7 +1452,7 @@ PrefabInstance:
     - target: {fileID: 7702060938288353720, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 7702060938288353720, guid: 2ff03aeed24012c4ba6caeb286d37222,
         type: 3}
@@ -1669,6 +1669,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256084070795432619, guid: 9276007ac993f3f4ebc61ec6771a1b75,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.8917116
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256084070795432619, guid: 9276007ac993f3f4ebc61ec6771a1b75,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -1.6559153e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256084070795432619, guid: 9276007ac993f3f4ebc61ec6771a1b75,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.05414299
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9276007ac993f3f4ebc61ec6771a1b75, type: 3}
@@ -2035,7 +2050,6 @@ GameObject:
   - component: {fileID: 1825427892}
   - component: {fileID: 1825427891}
   - component: {fileID: 1825427896}
-  - component: {fileID: 1825427895}
   m_Layer: 0
   m_Name: ExteriorCam
   m_TagString: Camera
@@ -2116,19 +2130,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1825427895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825427890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1817544bfb4b63a47982e8a890ae11da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 400
 --- !u!114 &1825427896
 MonoBehaviour:
   m_ObjectHideFlags: 0

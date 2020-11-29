@@ -42,7 +42,7 @@ public class SpawnedObject : MonoBehaviour
                 transform.Rotate(Vector3.down, rotY);
             }
             else
-            {
+            {                
                 //If using 1 finger then drag
                 //else if using 2 fingers or left shift and click, rotate
                 //else default to drag for Unity. 
@@ -70,26 +70,7 @@ public class SpawnedObject : MonoBehaviour
 
         LeftBounds(); //Check if object still within Yurt bounds
     }
-
-    /// <summary>
-    /// Delete object when pulled off screen
-    /// Only in outside view to avoid accidental deletion
-    /// 
-    /// ENSURE PARENT OBJECT HAS A RENDERER!
-    /// 
-    /// </summary>
-    private void OnBecameInvisible()
-    {
-        //If gameManager state is in outside
-        //and this gameobject is not within bounds of active Yurt
-        //then delete this game object
-        if (Manager.state == Manager.States.Outside || Manager.state == Manager.States.Inside
-                && !activeYurt.BoundsCol.bounds.Contains(gameObject.transform.position))
-        {
-            DestroyGameObject();
-        }
-    }
-
+       
     /// <summary>
     /// If object detects it has left collider bounds
     /// check if that object is outside of the Yurt collider bounds.
@@ -97,7 +78,7 @@ public class SpawnedObject : MonoBehaviour
     /// </summary>
     private void LeftBounds()
     {
-        if (!activeYurt.BoundsCol.bounds.Contains(gameObject.transform.position))
+        if (!activeYurt.BoundsCol.bounds.Intersects(gameObject.GetComponent<Collider>().bounds))
         {
             ReturnToPool();
         }

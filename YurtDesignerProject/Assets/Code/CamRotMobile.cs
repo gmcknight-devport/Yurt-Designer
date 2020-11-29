@@ -13,7 +13,7 @@ public class CamRotMobile : MonoBehaviour
     {
         if(Input.touchCount == 1 && notZooming == true && !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
         {
-            float mouseX = -Input.GetAxis("Mouse X"); 
+            float mouseX = -Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
             float rotAmountX = mouseX * Time.deltaTime * speed;
             float rotAmountY = mouseY * Time.deltaTime * speed;
@@ -23,9 +23,5 @@ public class CamRotMobile : MonoBehaviour
 
             transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
         }
-        
-
     }
-
 }
-
